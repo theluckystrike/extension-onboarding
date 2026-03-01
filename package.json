@@ -1,0 +1,39 @@
+{
+    "name": "extension-onboarding",
+    "version": "0.1.0",
+    "description": "Chrome extension onboarding framework — multi-step welcome flows, feature tours, tooltips, progress tracking, and completion callbacks. Zero dependencies.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "onboarding",
+        "welcome",
+        "tour",
+        "tooltip",
+        "walkthrough",
+        "manifest-v3",
+        "browser-extension",
+        "first-run",
+        "feature-tour"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/extension-onboarding.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
